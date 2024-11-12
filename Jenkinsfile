@@ -1,5 +1,8 @@
 pipeline {
-    agent any
+    agent {label 'usjenkins'}
+    tools {
+        maven '3.8.7'
+    }
     stages {
         stage('Compile') {
             steps { 
