@@ -24,7 +24,7 @@ pipeline {
                 deploy adapters: [tomcat9(url: 'http://15.206.178.231:8080/',
                             credentialsId: '0b69141a-312b-44f7-894b-68e947ea4353')],
                         war: 'target/*.war',
-                        contextPath: 'AddressBook'
+                        contextPath: 'AddressBook_V1'
             }
         }
     }
