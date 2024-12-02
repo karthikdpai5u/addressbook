@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'usjenkins'}
+    agent 'any'// {label 'usjenkins'}
     tools {
         maven '3.8.7'
     }
